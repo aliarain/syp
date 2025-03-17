@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import { MagnifyingGlass } from 'lucide-react';
 
 export function SearchForm() {
   const router = useRouter();
@@ -19,7 +19,7 @@ export function SearchForm() {
   return (
     <form onSubmit={handleSubmit} className="relative">
       <div className="relative">
-        <MagnifyingGlassIcon className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+        <MagnifyingGlass className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
