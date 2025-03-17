@@ -1,0 +1,14 @@
+{
+    "name": "@shipyourapp/kv",
+    "version": "1.0.0",
+    "description": "Key-value storage for ShipYourApp",
+    "main": "src/index.ts",
+    "scripts": {
+        "build": "tsc",
+        "lint": "biome lint .",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    }
+}

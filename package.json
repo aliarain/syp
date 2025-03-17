@@ -1,0 +1,17 @@
+{
+    "name": "shipyourapp",
+    "private": true,
+    "workspaces": ["packages/*", "apps/*"],
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "typecheck": "turbo run typecheck",
+        "clean": "turbo run clean && rm -rf node_modules"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^1.9.4",
+        "turbo": "latest"
+    },
+    "packageManager": "npm@10.0.0"
+}
